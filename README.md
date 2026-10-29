@@ -1,33 +1,48 @@
-# Awesome-Website-Theme-Marketplace [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+<p align="center">
+  <img src="./assets/banner.svg" alt="Awesome Website Theme Marketplace Banner" width="100%" />
+</p>
 
-> A curated directory of top website theme marketplaces, template discovery storefronts, SaaS digital asset platforms, and self-hosted open-source marketplace infrastructure.
+# 🌐 Awesome-Website-Theme-Marketplace
+
+<p align="left">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Mentioned in Awesome" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Website-Theme-Marketplace/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Website-Theme-Marketplace?style=flat-square&logo=github&color=gold" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Website-Theme-Marketplace/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Website-Theme-Marketplace?style=flat-square&logo=github&color=blue" alt="GitHub Forks" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Website-Theme-Marketplace/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+> 💎 **A curated directory of top website theme marketplaces, template discovery storefronts, SaaS digital asset platforms, and self-hosted open-source marketplace infrastructure.**
 
 Explore the premier ecosystems for buying, selling, and distributing website templates, UI kits, design systems, and CMS themes (WordPress, Shopify, Webflow, Framer, HTML5, React, and Vue).
 
 ---
 
-## Sector Overview & Market Dynamics
+## 📑 Table of Contents
+
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS & Hosted Theme Marketplaces](#️-saas--hosted-theme-marketplaces)
+- [💻 Open-Source Marketplace Platforms & Repositories](#-open-source-marketplace-platforms--repositories)
+- [🏗️ Open-Source Architectural Patterns](#️-open-source-architectural-patterns)
+- [🌟 Star History](#-star-history)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support](#-support)
+- [⚠️ Disclaimer](#️-disclaimer)
+
+---
+
+## 📊 Sector Overview & Market Dynamics
 
 The global website template and digital web design ecosystem is valued at **$1.8B – $2.5B** within a broader **$60B+** digital web design and CMS services market, projected to expand at a 7–8% CAGR through 2030. Market dynamics reveal a **moderately fragmented yet tiered winner-take-most structure**: proprietary walled gardens (Shopify Theme Store, Webflow Marketplace) exert concentrated platform control within their CMS boundaries, while horizontal open-web distribution is led by consolidated market titans like Shutterstock/Envato (ThemeForest, Envato Elements) and Newfold Digital, followed by specialized mid-market creator storefronts and UI design hubs (Creative Market, UI8, Creative Tim).
 
 ---
 
-## Table of Contents
-
-- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
-- [SaaS & Hosted Theme Marketplaces](#saas--hosted-theme-marketplaces)
-- [Open-Source Marketplace Platforms & Repositories](#open-source-marketplace-platforms--repositories)
-- [Open-Source Architectural Patterns](#open-source-architectural-patterns)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
-
----
-
-## SaaS & Hosted Theme Marketplaces
+## ☁️ SaaS & Hosted Theme Marketplaces
 
 The table below lists leading SaaS theme stores and digital asset marketplaces, ranked by company scale (market capitalization, enterprise valuation, or annual revenue in descending order).
 
-| Platform | Company Scale (Revenue / Valuation) | Pricing Model & Starting Tier | Free Tier Limits / Trial Terms | Focus & Ecosystem |
+| 🏢 Platform | 💰 Company Scale (Revenue / Valuation) | 🏷️ Pricing Model & Starting Tier | 🎁 Free Tier Limits / Trial Terms | 🎯 Focus & Ecosystem |
 | :--- | :--- | :--- | :--- | :--- |
 | **[Shopify Theme Store](https://themes.shopify.com/)** | **~$215B+** Market Cap (Shopify Inc. NYSE: SHOP) | One-time purchase starting at **$100** per theme (typical range $100–$500) | **Unlimited trial on unpublished draft stores**; full customization allowed in sandbox mode, but publishing live to visitors requires full license purchase. 12 official free themes included forever with any Shopify store. | Official Shopify storefront; high-performance e-commerce themes for Online Store 2.0. |
 | **[Mojo Marketplace](https://www.mojomarketplace.com/)** | **~$1.4B** Annual Revenue (Parent: Newfold Digital) | Individual theme sales starting at **$29** per template (catalog archived Dec 2023) | **Permanent free account** with limited free starter themes; paid items offered 30-day money-back guarantee (service sunset Dec 31, 2023). | Small-business WordPress themes and plugin distribution, natively integrated into Bluehost and HostGator. |
@@ -42,11 +57,11 @@ The table below lists leading SaaS theme stores and digital asset marketplaces, 
 
 ---
 
-## Open-Source Marketplace Platforms & Repositories
+## 💻 Open-Source Marketplace Platforms & Repositories
 
 Building a dedicated website theme storefront or template marketplace requires robust multi-vendor commerce engines, digital goods fulfillment, and catalog infrastructure. The following open-source repositories provide the foundational architecture, sorted in descending order by GitHub stargazers.
 
-| Project / Repository | Star Count | License | Architecture & Stack | Description & Theme Marketplace Fit |
+| 📦 Project / Repository | ⭐ Star Count | 📜 License | 🛠️ Architecture & Stack | 💡 Description & Theme Marketplace Fit |
 | :--- | :--- | :--- | :--- | :--- |
 | **[Sharetribe Go](https://github.com/sharetribe/sharetribe)** | [![Stars](https://img.shields.io/github/stars/sharetribe/sharetribe?style=social&color=white)](https://github.com/sharetribe/sharetribe/stargazers) | Source-Available | Ruby on Rails, MySQL | Complete marketplace platform software featuring multi-vendor registration, catalog indexing, messaging, transaction management, and automated escrow payouts. Ideal baseline for peer-to-peer template exchanges. |
 | **[Mercur](https://github.com/mercurjs/mercur)** | [![Stars](https://img.shields.io/github/stars/mercurjs/mercur?style=social&color=white)](https://github.com/mercurjs/mercur/stargazers) | MIT | TypeScript, MedusaJS, Node.js | Complete headless multi-vendor marketplace platform offering vendor onboarding, catalog management, commission handling, seller dashboards, and API storefronts. The leading open-source engine for building modern digital theme marketplaces. |
@@ -57,11 +72,11 @@ Building a dedicated website theme storefront or template marketplace requires r
 | **[UIUXLabz Marketplace](https://github.com/uiuxlabz/uiuxlabz)** | [![Stars](https://img.shields.io/github/stars/uiuxlabz/uiuxlabz?style=social&color=white)](https://github.com/uiuxlabz/uiuxlabz/stargazers) | MIT | HTML5, CSS3, JavaScript | Open-source template directory hosting 120+ framework-free, MIT-licensed industry website templates, each with automated live demo previews via GitHub Pages. |
 | **[kandown Theme Store Blueprint](https://github.com/vava-nessa/kandown)** | [![Stars](https://img.shields.io/github/stars/vava-nessa/kandown?style=social&color=white)](https://github.com/vava-nessa/kandown/stargazers) | MIT | Markdown, JSON, Go | Architectural design document and prototype for a Git-native community theme store: JSON registry indexing, CLI installation (`theme install`, `theme publish`), and PR-based community theme distribution. |
 | **[WordJS Theme Engine](https://github.com/jaimemartinez/wordjs)** | [![Stars](https://img.shields.io/github/stars/jaimemartinez/wordjs?style=social&color=white)](https://github.com/jaimemartinez/wordjs/stargazers) | MIT | JavaScript, Node.js | CMS framework with a built-in verified theme and plugin marketplace mechanism: features SHA-256 verified package downloads, AST code scanning, and decentralized catalog endpoints. |
-| **[Frostbreak](https://github.com/austinkregel/frostbreak)** | [![Stars](https://img.shields.io/github/stars/austinkregel/frostbreak)](https://github.com/austinkregel/frostbreak/stargazers) | MIT | PHP, WinterCMS | Open-source community marketplace platform designed for indexing, previewing, and distributing WinterCMS packages, components, and website themes. |
+| **[Frostbreak](https://github.com/austinkregel/frostbreak)** | [![Stars](https://img.shields.io/github/stars/austinkregel/frostbreak?style=social&color=white)](https://github.com/austinkregel/frostbreak/stargazers) | MIT | PHP, WinterCMS | Open-source community marketplace platform designed for indexing, previewing, and distributing WinterCMS packages, components, and website themes. |
 
 ---
 
-## Open-Source Architectural Patterns
+## 🏗️ Open-Source Architectural Patterns
 
 Because turnkey, dedicated theme marketplaces with built-in live iframe previews and digital license signing are rare off the shelf, teams building self-hosted theme storefronts typically leverage two architectural patterns:
 
@@ -70,18 +85,37 @@ Because turnkey, dedicated theme marketplaces with built-in live iframe previews
 
 ---
 
-## How to Contribute
+## 🌟 Star History
 
-We welcome additions of emerging theme marketplaces, developer template registries, and open-source marketplace infrastructure!
-
-1. Fork this repository.
-2. Create a new branch: `git checkout -b add-marketplace-entry`
-3. Add your entry to either the SaaS table or Open-Source table, maintaining alphabetical order or the appropriate sorted metric.
-4. Verify all URLs, licensing details, and pricing facts.
-5. Open a Pull Request with a clear description of the project.
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Website-Theme-Marketplace&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Website-Theme-Marketplace&type=date&legend=top-left)
 
 ---
 
-## Disclaimer
+## 🤝 How to Contribute
+
+We welcome additions of emerging theme marketplaces, developer template registries, and open-source marketplace infrastructure!
+
+1. 🍴 Fork this repository.
+2. 🌿 Create a new branch: `git checkout -b add-marketplace-entry`
+3. 📝 Add your entry to either the SaaS table or Open-Source table, maintaining alphabetical order or the appropriate sorted metric.
+4. 🔍 Verify all URLs, licensing details, and pricing facts.
+5. 🚀 Open a Pull Request with a clear description of the project.
+
+---
+
+## 💖 Support
+
+Thank you for visiting and supporting **Awesome-Website-Theme-Marketplace**! If you find this curated ecosystem directory helpful, please consider showing your support:
+
+- ⭐ **Star this repository** to help others discover it on GitHub.
+- 🍴 **Fork and contribute** new storefronts, tools, or architectural patterns.
+- 📢 **Share with peers**, digital creators, and web developers across Twitter/X, LinkedIn, and developer communities.
+- ☕ **Buy me a coffee / Sponsor**: If you'd like to support ongoing maintenance and research for this and other awesome lists, you can sponsor via the **[GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007)**.
+
+Every bit of support is deeply appreciated! 🙌
+
+---
+
+## ⚠️ Disclaimer
 
 This repository is curated for educational, technical, and informational purposes. Product pricing, subscription models, company valuations, and repository statistics are subject to change over time. Please verify licensing terms directly with individual authors and platforms before commercial deployment.
