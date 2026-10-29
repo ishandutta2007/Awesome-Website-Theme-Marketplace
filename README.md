@@ -7,7 +7,7 @@
 <p align="left">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Mentioned in Awesome" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Website-Theme-Marketplace/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Website-Theme-Marketplace?style=flat-square&logo=github&color=gold" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Website-Theme-Marketplace/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Website-Theme-Marketplace?style=flat-square&logo=github&color=gold" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Website-Theme-Marketplace/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Website-Theme-Marketplace?style=flat-square&logo=github&color=blue" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Website-Theme-Marketplace/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License" /></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -61,7 +61,7 @@ The table below lists leading SaaS theme stores and digital asset marketplaces, 
 
 Building a dedicated website theme storefront or template marketplace requires robust multi-vendor commerce engines, digital goods fulfillment, and catalog infrastructure. The following open-source repositories provide the foundational architecture, sorted in descending order by GitHub stargazers.
 
-| 📦 Project / Repository | ⭐ Star Count | 📜 License | 🛠️ Architecture & Stack | 💡 Description & Theme Marketplace Fit |
+| 📦 Project / Repository | ⭐ Stars_Count | 📜 License | 🛠️ Architecture & Stack | 💡 Description & Theme Marketplace Fit |
 | :--- | :--- | :--- | :--- | :--- |
 | **[Sharetribe Go](https://github.com/sharetribe/sharetribe)** | [![Stars](https://img.shields.io/github/stars/sharetribe/sharetribe?style=social&color=white)](https://github.com/sharetribe/sharetribe/stargazers) | Source-Available | Ruby on Rails, MySQL | Complete marketplace platform software featuring multi-vendor registration, catalog indexing, messaging, transaction management, and automated escrow payouts. Ideal baseline for peer-to-peer template exchanges. |
 | **[Mercur](https://github.com/mercurjs/mercur)** | [![Stars](https://img.shields.io/github/stars/mercurjs/mercur?style=social&color=white)](https://github.com/mercurjs/mercur/stargazers) | MIT | TypeScript, MedusaJS, Node.js | Complete headless multi-vendor marketplace platform offering vendor onboarding, catalog management, commission handling, seller dashboards, and API storefronts. The leading open-source engine for building modern digital theme marketplaces. |
