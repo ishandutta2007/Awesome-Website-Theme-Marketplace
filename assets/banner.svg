@@ -1,172 +1,197 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
   <defs>
     <!-- Background Gradients -->
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0b0f19" />
-      <stop offset="50%" stop-color="#111827" />
-      <stop offset="100%" stop-color="#0f172a" />
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
     </linearGradient>
 
-    <!-- Accent Gradients -->
-    <linearGradient id="accentTitle" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38bdf8" />
-      <stop offset="50%" stop-color="#818cf8" />
-      <stop offset="100%" stop-color="#c084fc" />
-    </linearGradient>
-
-    <linearGradient id="glowGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.25" />
+    <linearGradient id="glowLineGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0" />
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.8" />
       <stop offset="100%" stop-color="#818cf8" stop-opacity="0" />
     </linearGradient>
 
-    <linearGradient id="glowGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ec4899" stop-opacity="0.2" />
-      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0" />
+    <linearGradient id="glowLineGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c084fc" stop-opacity="0" />
+      <stop offset="50%" stop-color="#f43f5e" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#fb923c" stop-opacity="0" />
     </linearGradient>
 
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="40%" stop-color="#818cf8" />
+      <stop offset="70%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#f472b6" />
+    </linearGradient>
+
+    <!-- Card Background Gradient -->
     <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85" />
-      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.75" />
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9" />
     </linearGradient>
 
-    <linearGradient id="badgeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.18" />
-      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.28" />
+    <linearGradient id="pillGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.25" />
     </linearGradient>
   </defs>
 
   <style>
-    /* Dynamic Floating, Flowing, and Pulsing Animations */
-    @keyframes pulseGlow {
-      0%, 100% { opacity: 0.45; transform: scale(1); }
-      50% { opacity: 0.85; transform: scale(1.08); }
+    .title-text {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 42px;
+      letter-spacing: -0.5px;
     }
-    @keyframes floatLeft {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-8px); }
+    .subtitle-text {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      fill: #94a3b8;
+      letter-spacing: 0.2px;
     }
-    @keyframes floatRight {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(8px); }
+    .badge-text {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      fill: #e2e8f0;
     }
-    @keyframes flowLine {
-      0% { stroke-dashoffset: 400; }
-      100% { stroke-dashoffset: 0; }
+    .pulse-circle {
+      animation: pulse 3s ease-in-out infinite alternate;
     }
-
-    .pulse-orb-1 {
-      animation: pulseGlow 7s ease-in-out infinite;
-      transform-origin: 180px 120px;
+    .float-slow {
+      animation: floatSlow 6s ease-in-out infinite alternate;
     }
-    .pulse-orb-2 {
-      animation: pulseGlow 9s ease-in-out infinite 2s;
-      transform-origin: 1040px 300px;
+    .float-fast {
+      animation: floatFast 4.5s ease-in-out infinite alternate;
     }
-    .flow-wave {
-      stroke-dasharray: 20 12;
-      animation: flowLine 24s linear infinite;
+    .stream-line {
+      stroke-dasharray: 8 12;
+      animation: dash 20s linear infinite;
     }
-    .float-card-l {
-      animation: floatLeft 6s ease-in-out infinite;
+    .stream-line-rev {
+      stroke-dasharray: 6 10;
+      animation: dashRev 15s linear infinite;
     }
-    .float-card-r {
-      animation: floatRight 6.5s ease-in-out infinite 1s;
+    @keyframes dash {
+      to {
+        stroke-dashoffset: -1000;
+      }
+    }
+    @keyframes dashRev {
+      to {
+        stroke-dashoffset: 1000;
+      }
+    }
+    @keyframes pulse {
+      0% { opacity: 0.25; transform: scale(0.98); }
+      100% { opacity: 0.65; transform: scale(1.02); }
+    }
+    @keyframes floatSlow {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(-7px); }
+    }
+    @keyframes floatFast {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(6px); }
     }
   </style>
 
-  <!-- Background Base Canvas -->
-  <rect width="1200" height="420" rx="16" fill="url(#bgGrad)" />
+  <!-- Deep Tech Background Canvas -->
+  <rect width="1200" height="360" rx="16" fill="url(#bgGrad)" />
 
-  <!-- Dynamic Glowing Orbs (Strictly in Background) -->
-  <circle class="pulse-orb-1" cx="180" cy="120" r="190" fill="url(#glowGrad1)" />
-  <circle class="pulse-orb-2" cx="1040" cy="300" r="210" fill="url(#glowGrad2)" />
-
-  <!-- Dynamic Subtle Waves (Strictly in Background) -->
-  <g opacity="0.25">
-    <path class="flow-wave" d="M -50 90 Q 300 210 600 120 T 1250 170" fill="none" stroke="#38bdf8" stroke-width="2" />
-    <path class="flow-wave" d="M -50 330 Q 350 190 750 310 T 1250 250" fill="none" stroke="#818cf8" stroke-width="2" />
-    <path d="M 0 380 L 1200 380" stroke="#334155" stroke-width="1" stroke-dasharray="8 8" />
+  <!-- Animated Ambient Glow Blobs in Background -->
+  <g class="pulse-circle" style="transform-origin: 200px 100px;">
+    <circle cx="200" cy="100" r="140" fill="#38bdf8" opacity="0.12" />
+  </g>
+  <g class="pulse-circle" style="transform-origin: 1000px 240px; animation-delay: 1.5s;">
+    <circle cx="1000" cy="240" r="160" fill="#a855f7" opacity="0.14" />
+  </g>
+  <g class="pulse-circle" style="transform-origin: 600px 320px; animation-delay: 0.8s;">
+    <circle cx="600" cy="320" r="120" fill="#ec4899" opacity="0.09" />
   </g>
 
-  <!-- Dynamic Floating Decorative Glass Cards (Far Left & Far Right to Never Obstruct Text) -->
-  <!-- Left Side Card -->
-  <g class="float-card-l" transform="translate(60, 235)">
-    <rect width="145" height="110" rx="12" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.2" />
-    <circle cx="28" cy="28" r="9" fill="#38bdf8" />
-    <rect x="45" y="23" width="70" height="10" rx="5" fill="#475569" />
-    <rect x="20" y="52" width="105" height="7" rx="3.5" fill="#334155" />
-    <rect x="20" y="67" width="80" height="7" rx="3.5" fill="#334155" />
-    <rect x="20" y="82" width="50" height="7" rx="3.5" fill="#38bdf8" opacity="0.85" />
+  <!-- Animated Stream Lines in Background -->
+  <g opacity="0.55">
+    <path class="stream-line" d="M-50,80 Q200,40 450,110 T950,80 T1250,120" fill="none" stroke="url(#glowLineGrad1)" stroke-width="2.5" />
+    <path class="stream-line-rev" d="M-50,280 Q250,330 550,260 T1050,300 T1250,250" fill="none" stroke="url(#glowLineGrad2)" stroke-width="2" />
+    <path class="stream-line" d="M100,380 C300,240 400,320 700,210 C900,130 1100,190 1250,150" fill="none" stroke="#6366f1" stroke-width="1.5" stroke-opacity="0.35" />
   </g>
 
-  <!-- Right Side Card -->
-  <g class="float-card-r" transform="translate(995, 80)">
-    <rect width="150" height="130" rx="12" fill="url(#cardGrad)" stroke="#38bdf8" stroke-opacity="0.35" stroke-width="1.2" />
-    <rect x="16" y="16" width="118" height="46" rx="6" fill="#1e293b" />
-    <circle cx="75" cy="39" r="12" fill="#818cf8" opacity="0.8" />
-    <rect x="16" y="74" width="80" height="8" rx="4" fill="#94a3b8" />
-    <rect x="16" y="89" width="55" height="6" rx="3" fill="#64748b" />
-    <rect x="16" y="103" width="46" height="14" rx="7" fill="#10b981" fill-opacity="0.25" stroke="#10b981" stroke-opacity="0.5" stroke-width="0.8" />
-    <text x="23" y="113" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="8" font-weight="700" fill="#34d399">VERIFIED</text>
+  <!-- Dynamic Orbiting / Flow Nodes (Background Elements) -->
+  <g class="float-slow">
+    <circle cx="180" cy="85" r="4" fill="#38bdf8" opacity="0.8" />
+    <circle cx="1020" cy="95" r="5" fill="#f472b6" opacity="0.8" />
+    <circle cx="1110" cy="265" r="4.5" fill="#a855f7" opacity="0.8" />
+    <circle cx="95" cy="260" r="3.5" fill="#34d399" opacity="0.8" />
   </g>
 
-  <!-- FOREGROUND CONTENT: Guaranteed Sharp and Visible on All Renderers -->
-  <!-- Top Category Pill Tag -->
-  <g transform="translate(435, 55)">
-    <rect width="330" height="34" rx="17" fill="url(#badgeGrad)" stroke="#38bdf8" stroke-opacity="0.45" stroke-width="1.2" />
-    <circle cx="22" cy="17" r="5" fill="#38bdf8" />
-    <text x="36" y="22" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#38bdf8" letter-spacing="0.5">CURATED ECOSYSTEM DIRECTORY</text>
+  <!-- Foreground Content Area: Clear, Crisp & Unobscured -->
+
+  <!-- Top Pill / Status Tag -->
+  <g transform="translate(600, 52)" text-anchor="middle">
+    <rect x="-145" y="-15" width="290" height="30" rx="15" fill="#1e293b" stroke="#334155" stroke-width="1.2" />
+    <circle cx="-120" cy="0" r="4.5" fill="#10b981">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <text x="5" y="4.5" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1.2">CURATED ECOSYSTEM 2026</text>
   </g>
 
-  <!-- Main Hero Title -->
-  <text x="600" y="150" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="44" font-weight="800" letter-spacing="-0.5" fill="url(#accentTitle)">
+  <!-- Main Headline Title -->
+  <text x="600" y="125" text-anchor="middle" class="title-text" fill="url(#titleGrad)">
     Website Theme Marketplace
   </text>
 
-  <!-- Subtitle Description -->
-  <text x="600" y="195" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="17" font-weight="400" fill="#94a3b8">
+  <!-- Subtitle -->
+  <text x="600" y="165" text-anchor="middle" class="subtitle-text">
     Storefronts, Template Discovery, SaaS Portals &amp; Open-Source Commerce Infrastructure
   </text>
 
-  <!-- 4 Foreground Category Pills -->
-  <g transform="translate(235, 235)">
-    <!-- Pill 1: CMS Themes -->
+  <!-- Floating Feature Badges / Cards (Aligned neatly in bottom foreground) -->
+  <g transform="translate(135, 205)" class="float-slow">
+    <!-- Card 1: E-Commerce & CMS -->
     <g transform="translate(0, 0)">
-      <rect width="170" height="46" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1" />
-      <circle cx="24" cy="23" r="8" fill="#3b82f6" fill-opacity="0.2" />
-      <text x="24" y="27" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#60a5fa">WP</text>
-      <text x="42" y="28" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="13" font-weight="600" fill="#f1f5f9">Shopify &amp; WP</text>
+      <rect width="210" height="74" rx="12" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.4" />
+      <circle cx="32" cy="37" r="15" fill="#0284c7" fill-opacity="0.25" />
+      <text x="32" y="42" text-anchor="middle" font-size="16">🎨</text>
+      <text x="60" y="32" class="badge-text" fill="#f8fafc">Shopify &amp; WordPress</text>
+      <text x="60" y="52" font-family="system-ui, sans-serif" font-size="11" fill="#64748b">E-Commerce Storefronts</text>
     </g>
 
-    <!-- Pill 2: Modern No-Code -->
-    <g transform="translate(185, 0)">
-      <rect width="170" height="46" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1" />
-      <circle cx="24" cy="23" r="8" fill="#a855f7" fill-opacity="0.2" />
-      <text x="24" y="27" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#c084fc">WF</text>
-      <text x="42" y="28" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="13" font-weight="600" fill="#f1f5f9">Webflow &amp; Framer</text>
+    <!-- Card 2: Modern No-Code -->
+    <g transform="translate(240, 0)">
+      <rect width="210" height="74" rx="12" fill="url(#cardGrad)" stroke="#818cf8" stroke-width="1.2" stroke-opacity="0.4" />
+      <circle cx="32" cy="37" r="15" fill="#4f46e5" fill-opacity="0.25" />
+      <text x="32" y="42" text-anchor="middle" font-size="16">⚡</text>
+      <text x="60" y="32" class="badge-text" fill="#f8fafc">Webflow &amp; Framer</text>
+      <text x="60" y="52" font-family="system-ui, sans-serif" font-size="11" fill="#64748b">Modern No-Code Themes</text>
     </g>
 
-    <!-- Pill 3: Developer UI Kits -->
-    <g transform="translate(370, 0)">
-      <rect width="180" height="46" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1" />
-      <circle cx="24" cy="23" r="8" fill="#06b6d4" fill-opacity="0.2" />
-      <text x="24" y="27" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#22d3ee">UI</text>
-      <text x="42" y="28" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="13" font-weight="600" fill="#f1f5f9">Tailwind, React &amp; Vue</text>
+    <!-- Card 3: Developer UI Kits -->
+    <g transform="translate(480, 0)">
+      <rect width="210" height="74" rx="12" fill="url(#cardGrad)" stroke="#c084fc" stroke-width="1.2" stroke-opacity="0.4" />
+      <circle cx="32" cy="37" r="15" fill="#9333ea" fill-opacity="0.25" />
+      <text x="32" y="42" text-anchor="middle" font-size="16">💻</text>
+      <text x="60" y="32" class="badge-text" fill="#f8fafc">Tailwind &amp; UI Kits</text>
+      <text x="60" y="52" font-family="system-ui, sans-serif" font-size="11" fill="#64748b">React, Vue &amp; Dashboards</text>
     </g>
 
-    <!-- Pill 4: Open Source Engines -->
-    <g transform="translate(565, 0)">
-      <rect width="165" height="46" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1" />
-      <circle cx="24" cy="23" r="8" fill="#10b981" fill-opacity="0.2" />
-      <text x="24" y="27" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#34d399">OS</text>
-      <text x="42" y="28" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="13" font-weight="600" fill="#f1f5f9">Self-Hosted Engines</text>
+    <!-- Card 4: Open-Source Engines -->
+    <g transform="translate(720, 0)">
+      <rect width="210" height="74" rx="12" fill="url(#cardGrad)" stroke="#34d399" stroke-width="1.2" stroke-opacity="0.4" />
+      <circle cx="32" cy="37" r="15" fill="#059669" fill-opacity="0.25" />
+      <text x="32" y="42" text-anchor="middle" font-size="16">📦</text>
+      <text x="60" y="32" class="badge-text" fill="#f8fafc">Self-Hosted Engines</text>
+      <text x="60" y="52" font-family="system-ui, sans-serif" font-size="11" fill="#64748b">Multi-Vendor Marketplaces</text>
     </g>
   </g>
 
-  <!-- Bottom Value Proposition Text -->
-  <g transform="translate(600, 325)">
-    <text x="0" y="0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="13" fill="#64748b" font-weight="500">
-      Multi-Vendor Marketplaces &nbsp;•&nbsp; Creator Payouts &nbsp;•&nbsp; Digital Goods Distribution &nbsp;•&nbsp; Licensing
+  <!-- Bottom Indicator -->
+  <g transform="translate(600, 322)" text-anchor="middle">
+    <text font-family="system-ui, sans-serif" font-size="11" font-weight="500" fill="#475569" letter-spacing="0.5">
+      MULTI-VENDOR MARKETPLACES • CREATOR COMMISSIONS • DIGITAL GOODS FULFILLMENT • LICENSING
     </text>
   </g>
 </svg>
